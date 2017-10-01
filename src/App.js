@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
 import InputContainer from './containers/InputContainer'
 
 class App extends Component {
@@ -21,4 +21,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
