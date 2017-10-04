@@ -1,13 +1,31 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from 'material-ui/styles'
+import Button from 'material-ui/Button'
+import Typography from 'material-ui/Typography'
+
+const styles = theme => ({
+    button: {
+        margin: theme.spacing.unit
+    }
+})
 
 const Input = props => {
-    const { value, onClick } = props
+    const { value, onClick, classes } = props
     return (
         <div>
-            <p>{value}</p>
-            <input type="submit" value="Submit" onClick={() => { onClick("Redux Works: " + new Date()) }} />
+            <Typography gutterBottom noWrap>
+                {value}
+            </Typography>
+            <Button onClick={() => { onClick("Redux Works: " + new Date()) }} color="primary" className={classes.button}>
+                Submit
+            </Button>
         </div>
     )
 }
 
-export default Input
+Input.propTypes = {
+    classes: PropTypes.object.isRequired
+}
+
+export default withStyles(styles)(Input)
