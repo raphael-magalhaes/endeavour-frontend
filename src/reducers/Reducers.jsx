@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import InputReducer from './InputReducer'
+import appReducer from './appReducer'
+import responsiveAppBarDrawerReducer from './responsiveAppBarDrawerReducer'
 
-const Reducers = combineReducers({
-    value: InputReducer
+const reducers = combineReducers({
+    themeType: appReducer,
+    isLeftDrawerOpen: responsiveAppBarDrawerReducer
 })
 
-export default Reducers
+export default reducers
