@@ -1,0 +1,40 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: build/index.html
+  upload: build/index.html
+
+- url: /static
+  static_dir: build/static
+
+- url: /asset-manifest.json
+  static_files: build/asset-manifest.json
+  upload: build/asset-manifest.json
+
+- url: /favicon.png
+  static_files: build/favicon.png
+  upload: build/favicon.png
+
+- url: /manifest.json
+  static_files: build/manifest.json
+  upload: build/manifest.json
+
+- url: /service-worker.js
+  static_files: build/service-worker.js
+  upload: build/service-worker.js
+
+- url: /(.*)
+  static_files: build/index.html
+  upload: build/index.html
+
+skip_files:
+  - ^node_modules$
+  - ^public$
+  - ^src$
+  - ^.gitignore$
+  - ^.travis.yml$
+  - ^package.json$
+  - ^README.md$
