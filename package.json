@@ -16,10 +16,23 @@
     "redux": "3.7.2",
     "typeface-roboto": "0.0.35"
   },
+  "devDependencies": {
+    "eslint": "4.9.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.3.0",
+    "prettier": "1.7.4"
+  },
   "scripts": {
+    "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "YOU-SHALL-NOT-eject": "react-scripts eject"
-  }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+        "prettier --single-quote --write",
+        "git add"
+      ]
+    }
 }
