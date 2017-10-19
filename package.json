@@ -31,8 +31,18 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
-        "prettier --print-width 80 --use-tabs --no-semi --tab-width 4  --single-quote --write",
+        "prettier --print-width 80 --use-tabs --no-semi --tab-width 4 --single-quote --write",
         "git add"
       ]
+    },
+    "prettier": {
+      "printWidth": 80,
+      "tabWidth ": 4,
+      "singleQuote": true,
+      "trailingComma": "none",
+      "bracketSpacing": true,
+      "jsxBracketSameLine": false,
+      "semi": false,
+      "useTabs": true
     }
 }
