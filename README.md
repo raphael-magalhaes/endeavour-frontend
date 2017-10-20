@@ -1,5 +1,7 @@
 ## Endeavour Frontend
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/raphael-sdm/endeavour-frontend.svg)](https://greenkeeper.io/)
+
 ![Shields.io - Endeavour Active](https://img.shields.io/badge/Endeavour-Active-brightgreen.svg)
 [![Build Status](https://travis-ci.org/raphael-sdm/endeavour-frontend.svg?branch=master)](https://travis-ci.org/raphael-sdm/endeavour-frontend)
 ![David - Dependencies](https://david-dm.org/Sokwzar/endeavour-frontend.svg)
