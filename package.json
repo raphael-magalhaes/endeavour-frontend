@@ -17,32 +17,35 @@
     "typeface-roboto": "0.0.41"
   },
   "devDependencies": {
+    "codecov": "2.3.1",
     "eslint": "4.9.0",
     "husky": "0.14.3",
     "lint-staged": "4.3.0",
     "prettier": "1.7.4"
   },
   "scripts": {
+    "report": "codecov --disable=gcov -t e208f478-c537-43c1-abac-b92013fc8065",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
+    "coverage": "npm run test -- --coverage",
     "YOU-SHALL-NOT-eject": "react-scripts eject"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
-        "prettier --print-width 80 --use-tabs --no-semi --tab-width 4 --single-quote --write",
-        "git add"
-      ]
-    },
-    "prettier": {
-      "printWidth": 80,
-      "tabWidth ": 4,
-      "singleQuote": true,
-      "trailingComma": "none",
-      "bracketSpacing": true,
-      "jsxBracketSameLine": false,
-      "semi": false,
-      "useTabs": true
-    }
+      "prettier --print-width 80 --use-tabs --no-semi --tab-width 4 --single-quote --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth ": 4,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "semi": false,
+    "useTabs": true
+  }
 }
