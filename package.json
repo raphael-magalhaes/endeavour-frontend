@@ -27,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
+    "coverage": "npm run test -- --coverage",
     "YOU-SHALL-NOT-eject": "react-scripts eject"
   },
   "lint-staged": {
