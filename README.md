@@ -1,6 +1,7 @@
 ## Endeavour Frontend  [![HitCount](http://hits.dwyl.io/raphael-sdm/endeavour-frontend.svg)](http://hits.dwyl.io/raphael-sdm/endeavour-frontend)
 
 [![Build Status](https://travis-ci.org/raphael-sdm/endeavour-frontend.svg?branch=master)](https://travis-ci.org/raphael-sdm/endeavour-frontend)
+[![codecov](https://codecov.io/gh/raphael-sdm/endeavour-frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/raphael-sdm/endeavour-frontend)
 [![Waffle.io - Issues in progress](https://badge.waffle.io/raphael-sdm/endeavour-frontend.svg?label=in%20progress&title=In%20Progress)](http://waffle.io/raphael-sdm/endeavour-frontend)
 
 [![bitHound Code](https://www.bithound.io/github/raphael-sdm/endeavour-frontend/badges/code.svg)](https://www.bithound.io/github/raphael-sdm/endeavour-frontend)
