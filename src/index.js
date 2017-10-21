@@ -12,10 +12,11 @@ import './assets/font-awesome-4.7.0/css/font-awesome.core.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
-    <Provider store={store}>
-        <Router>
-            <AppContainer />
-        </Router>
-    </Provider>,
-    document.getElementById('root'))
+	<Provider store={store}>
+		<Router>
+			<AppContainer />
+		</Router>
+	</Provider>,
+	document.getElementById('root')
+)
 registerServiceWorker()

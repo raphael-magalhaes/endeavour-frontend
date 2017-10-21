@@ -7,38 +7,41 @@ import HelpIcon from 'material-ui-icons/Help'
 import { Link } from 'react-router-dom'
 
 export const mainContent = (
-  <div>
-    <Link className="no-link-style" to="/">
-      <ListItem button>
-        <ListItemIcon>
-          <ExploreIcon />
-        </ListItemIcon>
-        <ListItemText style={{ textWeight: "100" }} primary="The Endeavour" />
-      </ListItem>
-    </Link>
-    <Link className="no-link-style" to="/technologies">
-      <ListItem button>
-        <ListItemIcon>
-          <ExtensionIcon />
-        </ListItemIcon>
-        <ListItemText primary="Technologies" />
-      </ListItem>
-    </Link>
-    <Link className="no-link-style" to="/contribute">
-      <ListItem button>
-        <ListItemIcon>
-          <LightbulbOutlineIcon />
-        </ListItemIcon>
-        <ListItemText primary="Contribute" />
-      </ListItem>
-    </Link>
-    <Link className="no-link-style" to="/about">
-      <ListItem button>
-        <ListItemIcon>
-          <HelpIcon />
-        </ListItemIcon>
-        <ListItemText primary="About" />
-      </ListItem>
-    </Link>
-  </div>
+	<div>
+		<Link className="no-link-style" to="/">
+			<ListItem button>
+				<ListItemIcon>
+					<ExploreIcon />
+				</ListItemIcon>
+				<ListItemText
+					style={{ textWeight: '100' }}
+					primary="The Endeavour"
+				/>
+			</ListItem>
+		</Link>
+		<Link className="no-link-style" to="/technologies">
+			<ListItem button>
+				<ListItemIcon>
+					<ExtensionIcon />
+				</ListItemIcon>
+				<ListItemText primary="Technologies" />
+			</ListItem>
+		</Link>
+		<Link className="no-link-style" to="/contribute">
+			<ListItem button>
+				<ListItemIcon>
+					<LightbulbOutlineIcon />
+				</ListItemIcon>
+				<ListItemText primary="Contribute" />
+			</ListItem>
+		</Link>
+		<Link className="no-link-style" to="/about">
+			<ListItem button>
+				<ListItemIcon>
+					<HelpIcon />
+				</ListItemIcon>
+				<ListItemText primary="About" />
+			</ListItem>
+		</Link>
+	</div>
 )
