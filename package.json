@@ -14,7 +14,7 @@
     "react-router-dom": "4.2.2",
     "react-scripts": "1.0.14",
     "redux": "3.7.2",
-    "typeface-roboto": "0.0.41"
+    "typeface-roboto": "0.0.43"
   },
   "devDependencies": {
     "codecov": "3.0.0",
