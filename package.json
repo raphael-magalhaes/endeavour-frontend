@@ -20,7 +20,7 @@
     "codecov": "3.0.0",
     "eslint": "4.10.0",
     "husky": "0.14.3",
-    "lint-staged": "4.3.0",
+    "lint-staged": "5.0.0",
     "prettier": "1.7.4"
   },
   "scripts": {
