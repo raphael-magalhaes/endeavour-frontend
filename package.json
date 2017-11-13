@@ -21,7 +21,7 @@
     "eslint": "4.10.0",
     "husky": "0.14.3",
     "lint-staged": "4.3.0",
-    "prettier": "1.7.4"
+    "prettier": "1.8.0"
   },
   "scripts": {
     "report": "codecov --disable=gcov -t e208f478-c537-43c1-abac-b92013fc8065",
