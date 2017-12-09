@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "core-js": "2.5.1",
+    "core-js": "2.5.2",
     "material-ui": "1.0.0-beta.20",
     "material-ui-icons": "1.0.0-beta.17",
     "prop-types": "15.6.0",
