@@ -35,7 +35,7 @@ const NotFound = props => {
 			<br />
 			<Link className="no-link-style" to="/">
 				<Typography type="caption" gutterBottom align="center">
-					Go back to the home page.
+					Click here to go back to the home page.
 				</Typography>
 			</Link>
 		</div>

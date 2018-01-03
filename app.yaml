@@ -31,6 +31,8 @@ handlers:
   upload: build/index.html
 
 skip_files:
+  - ^.vscode$
+  - ^coverage$
   - ^node_modules$
   - ^public$
   - ^src$
