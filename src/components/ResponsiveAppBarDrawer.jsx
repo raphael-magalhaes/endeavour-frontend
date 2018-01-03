@@ -83,7 +83,13 @@ class ResponsiveAppBarDrawer extends React.Component {
 			<div>
 				<div className={classes.drawerHeader} />
 				<Link
-					onClick={this.props.onCloseLeftDrawer}
+					onClick={() => {
+						if (
+							this.state.mobileOpen ||
+							this.props.isLeftDrawerOpen
+						)
+							this.props.onCloseLeftDrawer()
+					}}
 					className="no-link-style"
 					to="/"
 				>
@@ -101,7 +107,15 @@ class ResponsiveAppBarDrawer extends React.Component {
 					/>
 				</Link>
 				<Divider />
-				<List onClick={this.props.onCloseLeftDrawer}>
+				<List
+					onClick={() => {
+						if (
+							this.state.mobileOpen ||
+							this.props.isLeftDrawerOpen
+						)
+							this.props.onCloseLeftDrawer()
+					}}
+				>
 					{mainContent}
 				</List>
 				<Divider />
@@ -136,17 +150,18 @@ class ResponsiveAppBarDrawer extends React.Component {
 											</span>
 										</Link>
 									</Typography>
-									<Tooltip
-										id="tooltip-dark-theme"
-										title={
-											this.props.theme.palette.type ===
-											'light'
-												? 'Dark theme'
-												: 'Light theme'
-										}
-										placement="bottom"
-									>
-										<a className="no-link-style">
+
+									<a className="no-link-style">
+										<Tooltip
+											id="tooltip-dark-theme"
+											title={
+												this.props.theme.palette
+													.type === 'light'
+													? 'Dark theme'
+													: 'Light theme'
+											}
+											placement="bottom"
+										>
 											<IconButton
 												color="contrast"
 												onClick={
@@ -158,16 +173,17 @@ class ResponsiveAppBarDrawer extends React.Component {
 													aria-hidden="true"
 												/>
 											</IconButton>
-										</a>
-									</Tooltip>
-									<Tooltip
-										id="tooltip-github-link"
-										title="GitHub"
-										placement="bottom"
+										</Tooltip>
+									</a>
+
+									<a
+										className="no-link-style"
+										href="https://github.com/raphael-sdm/endeavour-frontend/"
 									>
-										<a
-											className="no-link-style"
-											href="https://github.com/raphael-sdm/endeavour-frontend/"
+										<Tooltip
+											id="tooltip-github-link"
+											title="GitHub"
+											placement="bottom"
 										>
 											<IconButton color="contrast">
 												<span
@@ -175,8 +191,8 @@ class ResponsiveAppBarDrawer extends React.Component {
 													aria-hidden="true"
 												/>
 											</IconButton>
-										</a>
-									</Tooltip>
+										</Tooltip>
+									</a>
 								</Toolbar>
 							</AppBar>
 							<Hidden mdUp>
@@ -186,9 +202,10 @@ class ResponsiveAppBarDrawer extends React.Component {
 									classes={{
 										paper: classes.drawerPaper
 									}}
-									onRequestClose={
-										this.props.onCloseLeftDrawer
-									}
+									onRequestClose={() => {
+										if (this.props.isLeftDrawerOpen)
+											this.props.onCloseLeftDrawer()
+									}}
 									ModalProps={{
 										keepMounted: true // Better open performance on mobile.
 									}}
