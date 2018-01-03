@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "connected-react-router": "4.3.0",
-    "core-js": "2.5.2",
+    "core-js": "2.5.3",
     "history": "4.7.2",
     "material-ui": "1.0.0-beta.20",
     "material-ui-icons": "1.0.0-beta.17",
