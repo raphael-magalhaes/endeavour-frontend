@@ -19,7 +19,7 @@
     "typeface-roboto": "0.0.45"
   },
   "devDependencies": {
-    "codecov": "3.0.0",
+    "codecov": "3.0.1",
     "eslint": "4.15.0",
     "husky": "0.14.3",
     "lint-staged": "6.0.0",
